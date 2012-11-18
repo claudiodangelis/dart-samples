@@ -1,0 +1,5 @@
+name:  canvas
+description:  A sample application
+
+#dependencies:
+#  unittest: { sdk: unittest }
