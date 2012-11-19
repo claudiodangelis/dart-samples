@@ -1,5 +1,5 @@
 main(){
-	
+
 	String template = "Hello _USERNAME_";
 
 	List<String> usernames = ['Mike','Bob','Dale'];
@@ -24,5 +24,17 @@ main(){
 
 	}
 
-	
+
 }
+
+/* OUTPUT
+
+Hello _USERNAME_
+Hello Mike
+Hello Bob
+Hello Dale
+Hello _USERNAME_
+bob@twnp.ks
+dale.cooper62@fbi.ks
+
+*/

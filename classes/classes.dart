@@ -1,25 +1,26 @@
-  class Utente{
-    String nome,email,provenienza;
+  class User{
+    String name,email,location;
   }
 
-  class Moderatore extends Utente {
-    var banUtente;
-    var cancellaMessaggio;
+  class Moderator extends User {
+    var banUser;
+    var deleteMessage;
   }
 
-  class Amministratore extends Moderatore {
-    var banModeratore;
+  class Administrator extends Moderator {
+    var banModerator;
   }
 
-  class UtentePremium extends Utente {
-    String dettaglioAggiuntivo;
-    int numeroDiLicenza;
+  class UserPremium extends User {
+    String moreDetails;
+    int licenseNumber;
     Date scadenzaContratto;
   }
 
   main(){
 
-  var idUtente = new Utente();
-  assert(idUtente is Utente);
-  assert(idUtente is! Moderatore);
-   }
+  var idUser = new User();
+  assert(idUser is User);
+  assert(idUser is! Moderator);
+
+  }
