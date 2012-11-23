@@ -1,7 +1,7 @@
 dart-samples
 ============
 
-Collection of code samples, feel free to fork and contribute
+Collection of code samples, feel free to fork and contribute.
 
 # LICENSE
 
