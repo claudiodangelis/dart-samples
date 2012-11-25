@@ -3,6 +3,10 @@ dart-samples
 
 Collection of code samples, feel free to fork and contribute
 
+Contributions :
+- Claudio d'Angelis
+- Dartlangfr (Nicolas François & Guillaume Girou)
+
 # LICENSE
 
    Copyright 2012 Claudio d'Angelis
