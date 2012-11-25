@@ -3,20 +3,6 @@ import 'dart:io';
 // Prints informations about current systems
 // Linux only
 
-String kilobytes2human(num value){
-
-  List<String> units = ['KB','MB','GB','TB'];
-  int unitIndex = 0;
-
-  while(value>1024){
-    value/=1024;
-    unitIndex++;
-  }
-
-  return '${value.toStringAsFixed(2)} ${units[unitIndex]}';
-
-}
-
 main(){
 
   Process.run('uname',[]).then((ProcessResult results){
@@ -31,7 +17,6 @@ main(){
       });
 
       Process.run('cat', ['/proc/meminfo']).then((ProcessResult results){
-        // /proc/meminfo returns values expressed in kilobytes
         print('RAM: ${kilobytes2human(
             int.parse(
                 results.stdout.split('\n')[0].replaceAll(new RegExp('[^0-9]'), ''))
@@ -63,6 +48,18 @@ main(){
       print('Sorry, this script doesn\'t work on non-Linux operating systems.');
     }
   });
+}
 
+String kilobytes2human(num value){
+
+  List<String> units = ['KB','MB','GB','TB'];
+  int unitIndex = 0;
+
+  while(value>1024){
+    value/=1024;
+    unitIndex++;
+  }
+
+  return '${value.toStringAsFixed(2)} ${units[unitIndex]}';
 
 }
