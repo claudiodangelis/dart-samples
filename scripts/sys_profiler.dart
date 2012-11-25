@@ -20,7 +20,7 @@ String kilobytes2human(num value){
 main(){
 
   Process.run('uname',[]).then((ProcessResult results){
-    if(results.stdout=='Linux'){
+    if(results.stdout=='Linux\n'){
 
       Process.run('uname', ['-a']).then((ProcessResult results){
         print(results.stdout.split('\n')[0]);
