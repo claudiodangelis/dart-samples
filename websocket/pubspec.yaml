@@ -1,0 +1,5 @@
+name:  websocket
+description:  A sample application
+
+#dependencies:
+#  unittest: { sdk: unittest }

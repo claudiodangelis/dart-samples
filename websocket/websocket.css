@@ -1,0 +1,23 @@
+.result li {
+  display: none;
+}
+
+.result li:nth-child(-n+15) {
+  display: list-item;
+}
+
+.result li:nth-child(1) { opacity: 0.95 }
+.result li:nth-child(2) { opacity: 0.90 }
+.result li:nth-child(3) { opacity: 0.85 }
+.result li:nth-child(4) { opacity: 0.80 }
+.result li:nth-child(5) { opacity: 0.75 }
+.result li:nth-child(6) { opacity: 0.70 }
+.result li:nth-child(7) { opacity: 0.65 }
+.result li:nth-child(8) { opacity: 0.60 }
+.result li:nth-child(9) { opacity: 0.55 }
+.result li:nth-child(10) { opacity: 0.50 }
+.result li:nth-child(11) { opacity: 0.45 }
+.result li:nth-child(12) { opacity: 0.40 }
+.result li:nth-child(13) { opacity: 0.35 }
+.result li:nth-child(14) { opacity: 0.30 }
+.result li:nth-child(15) { opacity: 0.25 }
