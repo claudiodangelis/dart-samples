@@ -1,6 +1,16 @@
 dart-samples
 ============
 
+# DEPRECATED
+
+This repository contains 2 years old code, please consider browsing [dartlang-italia/dart-libraries-samples](https://github.com/dartlang-italia/dart-libraries-samples) instead.
+
+
+Claudio
+
+
+---
+
 Collection of code samples, feel free to fork and contribute.
 
 Contributions :
